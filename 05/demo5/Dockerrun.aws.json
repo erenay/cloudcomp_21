@@ -1,0 +1,20 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "bucket": "cloudcomp-21-docker",
+    "key": "dockercfg"
+  },
+  "Volumes": [
+    {
+      "ContainerDirectory": "/var/app",
+      "HostDirectory": "/var/app"
+    }
+  ],
+  "Ports": [
+    {
+      "ContainerPort": 5000,
+      "HostPort": 5000
+    }
+  ],
+  "Logging": "/var/eb_log"
+}
